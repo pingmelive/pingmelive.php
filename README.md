@@ -8,21 +8,23 @@ Easy right!.
 ## How to use
 
 ### Register yourself on
-[https://pingmelive.com](https://pingmelive.com)
-You will get your API KEY after registeration.
+
+[https://pingmelive.com](https://pingmelive.com) **and get your `API KEY`**.
 
 
 ### Usage
 
-Include pingmelive
+Include pingMeLive Library
+
+**`Note` It doesn't require any jQuery Library, Its Extra light(<3KB).
+
 ```php
 <?php
-require_once("pingmelive.lib.php");
+require_once("pingMeLive.lib.php");
 $pingmelive = new pingMeLive("apiKey","projectID","errorStatus(true/false)","errorName"); 
 ?>
 
 ```
-
 ...and you are done!
 
 ## Custom Events
@@ -57,6 +59,6 @@ $pingMeLive->detailedEvent("groupTitle","eventMessage","detailDescription");
 
 ## Some usefull information
 
-* If you only want error pings, Just install the library and and intialize it.
-* You can smartly use group title for you custom events.
+* If you only want error pings, Just include the `pingMeLive library` and and `Intialize` it.
+* You can smartly use `groupTitle` for creating uniques group for your pings.
 
