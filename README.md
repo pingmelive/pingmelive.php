@@ -16,7 +16,7 @@ Easy right!.
 
 Include pingMeLive Library
 
-**`Note` It doesn't require any jQuery Library, Its Extra light(<3KB).
+`Note` **It doesn't require any jQuery Library, Its Extra light(<3KB).
 
 ```php
 <?php
