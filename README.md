@@ -47,7 +47,7 @@ $pingMeLive->detailedEvent("groupTitle","eventMessage","detailDescription");
 ```
 
 ### Options
-* **apiKey** : You will get an `API KEY` when you will register on pingmelive.com
+* **apiKey** : To get an `API KEY` , register on pingmelive.com. Its free to use.
 * **projectID** : Once registered, Click on New Project to create. 
 * **errorStatus** : `true` / `false` (Boolen Value).
 * **errorName** : This will be your `Group Title/Name` where all the error will be pinged.(This works when `errorStatus` is set as `true`.
