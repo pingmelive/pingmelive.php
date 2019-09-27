@@ -2,7 +2,7 @@
 
 This is a library which helps you to get LIVE notifications of actions taking place on your webistes and applications.
 Just Copy past the below codes and get live updates of errors and actions. Make Categories of pings based on projects (etc) and assign it to your team mates.
-That's what PING ME LIVE does.
+That's what PingMeLive does.
 Easy right!.
 
 ## How to use
