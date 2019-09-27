@@ -18,7 +18,7 @@ Include pingmelive
 ```php
 <?php
 require_once("pingmelive.lib.php");
-$pingmelive = new pingMeLive(apiKey,projectID,errorStatus,errorName); 
+$pingmelive = new pingMeLive("apiKey","projectID","errorStatus(true/false)","errorName"); 
 ?>
 
 ```
@@ -30,28 +30,33 @@ $pingmelive = new pingMeLive(apiKey,projectID,errorStatus,errorName);
 You can also use pingMeLive for sending custom events.
 
 ### 1.Simple event
-```html
-$pingMeLive->simpleEvent(groupTitle,eventMessage);
+```php
+<?php 
+//To trigger Simple Event, Just call the below function.
+$pingMeLive->simpleEvent("groupTitle","eventMessage");
+?>
  ```    
 
 If you want to send some detailed long description you can use `Detailed event`
 ### 2.Detailed event
-```html
-$pingMeLive->detailedEvent(groupTitle,eventMessage,detailDescription);
+```php
+<?php 
+//To trigger Detailed Event, Just call the below function.
+$pingMeLive->detailedEvent("groupTitle","eventMessage","detailDescription");
+?>
 ```
 
 ### Options
 * apiKey : You will get an `API KEY` when you will register on pingmelive.com
-* projectID : You will get an `PROJECT ID` when you will register on pingmelive.com 
-* errorStatus : true / false
-* errorName : 
-* groupTitle : 
-* eventMessage :
-* detailDescription : 
+* projectID : Once registered, Click on New Project to create. 
+* errorStatus : true / false (Boolen Value).
+* errorName : This will be your `Group Title/Name` where all the error will be pinged.(This works when `errorStatus` is set as `true`.
+* groupTitle : This will be your `Group Tilte/Name` under which , you will get all your pings.
+* eventMessage : The `errorMessage` is limited to 360 character in length. Any additional characters beyond 360 character will be truncated.
+* detailDescription : The `detailDescription` is does not have any length limitation. You can also send JSON Formatted String / or simple plain string.
 
 ## Some usefull information
 
-* Only `Detailed event` will by default contain the information like device info,app version code etc.
-* If you only want error event just install the library and thats it, no need to code anything else.
+* If you only want error pings, Just install the library and and intialize it.
 * You can smartly use group title for you custom events.
 
