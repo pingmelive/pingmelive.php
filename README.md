@@ -18,7 +18,7 @@ Include pingmelive
 ```php
 <?php
 require_once("pingmelive.lib.php");
-   $pingmelive = new pingMeLive(apiKey,projectID,errorStatus,errorName); 
+$pingmelive = new pingMeLive(apiKey,projectID,errorStatus,errorName); 
 ?>
 
 ```
@@ -42,7 +42,7 @@ $pingMeLive->detailedEvent(groupTitle,eventMessage,detailDescription);
 
 ### Options
 * apiKey : You will get an `API KEY` when you will register on pingmelive.com
-* appID : You will get an `APP ID` when you will register on pingmelive.com 
+* projectID : You will get an `APP ID` when you will register on pingmelive.com 
 * errorStatus : true / false
 * errorName : 
 * groupTitle : 
