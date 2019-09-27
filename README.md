@@ -1,6 +1,9 @@
-# Library to handle live events / Error Live Reporting
+# What is PingMeLive?
 
-This library allows you to get all the error.
+This is a library which helps you to get LIVE notifications of actions taking place on your webistes and applications.
+Just Copy past the below codes and get live updates of errors and actions. Make Categories of pings based on projects (etc) and assign it to your team mates.
+That's what PING ME LIVE does.
+Easy right!.
 
 ## How to use
 
@@ -12,11 +15,11 @@ You will get your API KEY after registeration.
 ### Usage
 
 Include pingmelive
-```html
-<script src="pingmelive.min.js"></script>
-<script type = "text/javascript"> 
-  var pingmelive = new pingMeLive(apiKey,appID,errorStatus,errorName); 
-</script> 
+```php
+<?php
+require_once("pingmelive.lib.php");
+   $pingmelive = new pingMeLive(apiKey,projectID,errorStatus,errorName); 
+?>
 
 ```
 
@@ -28,13 +31,13 @@ You can also use pingMeLive for sending custom events.
 
 ### 1.Simple event
 ```html
-pingMeLive.simpleEvent(groupTitle,eventMessage);
+$pingMeLive->simpleEvent(groupTitle,eventMessage);
  ```    
 
 If you want to send some detailed long description you can use `Detailed event`
 ### 2.Detailed event
 ```html
-pingMeLive.detailedEvent(groupTitle,eventMessage,detailDescription);
+$pingMeLive->detailedEvent(groupTitle,eventMessage,detailDescription);
 ```
 
 ### Options
