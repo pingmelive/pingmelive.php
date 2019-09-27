@@ -49,7 +49,7 @@ $pingMeLive->detailedEvent("groupTitle","eventMessage","detailDescription");
 ### Options
 * apiKey : You will get an `API KEY` when you will register on pingmelive.com
 * projectID : Once registered, Click on New Project to create. 
-* errorStatus : true / false (Boolen Value).
+* errorStatus : `true` / `false` (Boolen Value).
 * errorName : This will be your `Group Title/Name` where all the error will be pinged.(This works when `errorStatus` is set as `true`.
 * groupTitle : This will be your `Group Tilte/Name` under which , you will get all your pings.
 * eventMessage : The `errorMessage` is limited to 360 character in length. Any additional characters beyond 360 character will be truncated.
